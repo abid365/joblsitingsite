@@ -1,12 +1,15 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
+import Job from './Job';
+
 
 const Home = () => {
     const jobs = useLoaderData();
-    console.log(jobs);
+    // console.log(jobs);
     return (
         <div>
             <section className="">
+            
             <div className="grid md:grid-cols-2 lg:grid-cols-2">
                 {/* left portion: text */}
                 <div className="mt-36">
@@ -41,12 +44,12 @@ const Home = () => {
                     <p className="mt-4">Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
                 {/* available jobs */}
-                <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-6 mt-8">
+                <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-3 mt-8">
 
                     <div className="jobs-card">
                         <img className="jobs-icon" src="/src/assets/Icons/accounts 1.png" alt=""/>
                         <h1 className="mt-8 font-bold">Account & Finance</h1>
-                        <small className="small-text">300 Jobs Available</small>
+                        <small className="small-text">300+ Jobs Available</small>
                     </div>
 
                     <div className="jobs-card">
@@ -58,17 +61,36 @@ const Home = () => {
                     <div className="jobs-card">
                         <img className="jobs-icon" src="/src/assets/Icons/social-media 1.png" alt=""/>
                         <h1 className="mt-8 font-bold">Marketing & Sales</h1>
-                        <small className="small-text">150 Jobs Available</small>
+                        <small className="small-text">150+ Jobs Available</small>
                     </div>
 
                     <div className="jobs-card">
                         <img className="jobs-icon" src="/src/assets/Icons/chip 1.png" alt=""/>
                         <h1 className="mt-8 font-bold">Engineering Job</h1>
-                        <small className="small-text">224 Jobs Available</small>
+                        <small className="small-text">224+ Jobs Available</small>
                     </div>
 
                 </div>
 
+            </div>
+
+            {/* fetured job section, by componenet */}
+            <div className="mt-36">
+                <h1 className='text-center text-5xl font-bold text-slate-800'>Featured Jobs: {jobs.length}</h1>
+
+                <p className="text-slate-600 mt-4 text-center">Explore thousands of job opportunities with all the information you need. Its your future</p>
+
+             <div className="mx-auto">
+             {
+                    jobs.map(job =>
+                        // console.log(job);
+                        <Job
+                        job={job}
+                        key={job.id}
+                        ></Job>
+                    )
+              }
+             </div>
             </div>
             
         </div>
