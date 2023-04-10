@@ -9,3 +9,15 @@
   .default{
     @apply text-[16px] font-medium tracking-wide text-slate-500 transition-colors duration-200 hover:text-blue-400
   }
+
+  .jobs-card{
+    @apply bg-purple-50 rounded-xl px-9 py-4 mx-3
+  }
+
+  .jobs-icon{
+    @apply p-4 bg-indigo-50 rounded-lg
+  }
+
+  .small-text{
+    @apply text-slate-500
+  }
