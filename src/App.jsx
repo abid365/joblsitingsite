@@ -1,9 +1,14 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+import Header from './Components/Header';
 
 const App = () => {
   return (
-    <div>
-      This is app jsx
+    <div className=''>
+      <Header />
+      <div className="mx-8">
+        <Outlet />
+      </div>
     </div>
   );
 };
