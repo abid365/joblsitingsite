@@ -1,21 +1,32 @@
 import React from 'react';
+import { BeakerIcon, MapPinIcon, CurrencyDollarIcon } from '@heroicons/react/24/solid'
 
 const Job = ({job}) => {
     console.log(job);
     return (
         <div className='border pl-10 py-10 rounded-lg'>
             <img className='h-9 w-9' src={job.img} alt="" />
-            <h1 className="mt-9 font-bold">{job.postName}</h1>
+            <h1 className="mt-9 font-bold text-base text-slate-700">{job.postName}</h1>
             <p className="text-slate-700 text-sm">{job.compName}</p>
 
             <div className="OnsightOrRemote my-4">
-                <span className='mr-3 text-xs font-extrabold bg-gradient-to-r from-indigo-500 to-indigo-300 text-transparent bg-clip-text border rounded px-3 py-2'>{job.type}</span>
-                <span className='text-xs font-extrabold bg-gradient-to-r from-indigo-500 to-indigo-300 text-transparent bg-clip-text border rounded px-3 py-2'>{job.duration}</span>
+                <span className='job-type'>{job.type}</span>
+                <span className='job-duration'>{job.duration}</span>
             </div>
 
-            <span></span>
-            <span></span>
-            <button className=''>View Details</button>
+            <div className="flex gap-6 items-center">
+               <div className="flex gap-2 items-center text-slate-700">
+                    <MapPinIcon className="h-4 w-4" />
+                    <span className='text-xs pt-2'>{job.city}, {job.country}</span>
+               </div>
+
+                <div className="flex gap-2 items-center text-slate-700">
+                <CurrencyDollarIcon className="h-4 w-4" />
+                <span className='text-xs pt-2'>{job.salary}</span>
+                </div>
+            </div>
+
+            <button className='mt-6 rounded bg-gradient-to-l from-indigo-400 to-purple-300 py-3 px-5 text-sm font-bold text-white'>View Details</button>
         </div>
     );
 };

@@ -76,11 +76,11 @@ const Home = () => {
 
             {/* fetured job section, by componenet */}
             <div className="mt-36">
-                <h1 className='text-center text-5xl font-bold text-slate-800'>Featured Jobs: {jobs.length}</h1>
+                <h1 className='text-center text-5xl font-bold text-slate-800'>Featured Jobs</h1>
 
                 <p className="text-slate-600 mt-4 text-center">Explore thousands of job opportunities with all the information you need. Its your future</p>
 
-             <div className="mx-auto">
+             <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-2 mt-8 gap-6">
              {
                     jobs.map(job =>
                         // console.log(job);

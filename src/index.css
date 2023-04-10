@@ -21,3 +21,11 @@
   .small-text{
     @apply text-slate-500
   }
+
+  .job-type{
+    @apply mr-3 text-xs font-extrabold bg-gradient-to-r from-indigo-500 to-indigo-300 text-transparent bg-clip-text border rounded px-3 py-2
+  }
+
+  .job-duration{
+    @apply text-xs font-extrabold bg-gradient-to-r from-indigo-500 to-indigo-300 text-transparent bg-clip-text border rounded px-3 py-2
+  }
