@@ -34,18 +34,18 @@
         },
         {
         "id": "3",
-        "compName": "Facebook",
+        "compName": "Meta",
         "type": "Remote",
         "salary": "110k - 170k",
         "postName": "Frontend Developer",
-        "jobDesc": "Develop and maintain user-facing features for Facebook's products and services.",
+        "jobDesc": "Develop and maintain user-facing features for Meta's products and services.",
         "jobResponsibility": "Collaborate with product designers, software engineers and other stakeholders to develop and maintain user-facing features.",
         "city": "Menlo Park",
         "country": "USA",
         "eduReq": "Bachelor's or Master's degree in Computer Science or related field",
         "experience": "2+ years of experience in frontend development",
         "phone": "+1 (650) 543-4800",
-        "email": "hr@facebook.com",
+        "email": "hr@Meta.com",
         "streetAddress": "1 Hacker Way"
         },
         {
