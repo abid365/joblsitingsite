@@ -11,29 +11,35 @@ import Stats from './Components/Stats';
 import Appliedjobs from './Components/Appliedjobs';
 import Blog from './Components/Blog';
 import Jobdetails from './Components/Jobdetails';
+import Error from './Components/Error';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
         path: '/',
         element: <Home />,
         loader: ()=> fetch('/fakejobs.json'),
+        errorElement: <Error />,
 
       },
       {
         path: 'statistics',
-        element: <Stats />
+        element: <Stats />,
+        errorElement: <Error />,
       },
       {
         path: 'appliedjobs',
-        element: <Appliedjobs />
+        element: <Appliedjobs />,
+        errorElement: <Error />,
       },
       {
         path: 'blogs',
-        element: <Blog />
+        element: <Blog />,
+        errorElement: <Error />,
       },
       {
         path: 'details/:id',
@@ -44,7 +50,8 @@ const router = createBrowserRouter([
           
           const jobDetails = data.find(job=> job.id==params.id);
           return jobDetails;
-        }
+        },
+        errorElement: <Error />,
       }
     ],
   },
