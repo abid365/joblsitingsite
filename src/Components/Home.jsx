@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Job from './Job';
 
 
 const Home = () => {
     const jobs = useLoaderData();
-    // console.log(jobs);
+    const [showAll, setShowAll] = useState(false);
+
+    const handleShowAll = ()=>{
+        setShowAll(true);
+    }
+
     return (
         <div>
             <section className="">
@@ -21,7 +26,7 @@ const Home = () => {
                     <h1 className="text-[#757575] w-[320px] pl-2 mt-6">Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.
                     </h1>
 
-                    <button className='ml-2 mt-8 rounded-md bg-gradient-to-l from-indigo-400 to-purple-300 py-3 px-5 font-bold text-white'>Get Started
+                    <button className='ml-2 mt-8x rounded-md bg-gradient-to-l from-indigo-400 to-purple-300 py-3 p-5 fo-bold text-white'>Get Startednt
                     </button>
 
                 </div>
@@ -74,7 +79,7 @@ const Home = () => {
 
             </div>
 
-            {/* fetured job section, by componenet */}
+            {/* fetured job section,  */}
             <div className="mt-36">
                 <h1 className='text-center text-5xl font-bold text-slate-800'>Featured Jobs</h1>
 
@@ -82,17 +87,27 @@ const Home = () => {
 
              <div className="mx-auto grid lg:grid-cols-2 md:grid-cols-2 mt-8 gap-6">
              {
-                    jobs.map(job =>
+                    jobs.slice(0, showAll? 9: 4).map(job =>
                         // console.log(job);
                         <Job
                         job={job}
                         key={job.id}
                         ></Job>
                     )
+
               }
+                
              </div>
             </div>
-            
+            <div className='my-10 lg:flex lg:justify-center md:flex md:justify-center'>
+                    {
+                        !showAll && (
+                            <div className='lg:w-fit md:w-fit sm:text-center' onClick={handleShowAll}>
+                                <button className='w-full font-bold text-sm bg-gradient-to-l from-purple-400 to-indigo-400 px-5 py-3 rounded text-white'>View All Jobs</button>
+                            </div>
+                        )
+                    }
+            </div>
         </div>
     );
 };

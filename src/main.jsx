@@ -10,6 +10,7 @@ import Home from './Components/Home';
 import Stats from './Components/Stats';
 import Appliedjobs from './Components/Appliedjobs';
 import Blog from './Components/Blog';
+import Jobdetails from './Components/Jobdetails';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
-        loader: ()=> fetch('fakejobs.json'),
+        loader: ()=> fetch('/fakejobs.json'),
 
       },
       {
@@ -33,6 +34,17 @@ const router = createBrowserRouter([
       {
         path: 'blogs',
         element: <Blog />
+      },
+      {
+        path: 'details/:id',
+        element: <Jobdetails />,
+        loader: async({params})=>{
+          const res = await fetch('/fakejobs.json')
+          const data = await res.json();
+          
+          const jobDetails = data.find(job=> job.id==params.id);
+          return jobDetails;
+        }
       }
     ],
   },

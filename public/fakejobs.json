@@ -2,7 +2,7 @@
 [
         {
             "id": "1",
-            "img": "/src/assets/Logo/G-fot-google.png",
+            "img": "https://i.ibb.co/xm7w5NR/G-fot-google.png",
             "compName": "Google",
             "type": "Onsight",
             "duration": "Full-Time",
@@ -21,7 +21,7 @@
 
             {
             "id": "2",
-            "img": "/src/assets/Logo/amazon64px.png",
+            "img": "https://i.ibb.co/VjK0fKC/amazon64px.png",
             "compName": "Amazon",
             "type": "Onsight",
             "duration": "Full-Time",
@@ -40,7 +40,7 @@
 
             {
             "id": "3",
-            "img": "/src/assets/Logo/meta.png",
+            "img": "https://i.ibb.co/L8GfDTD/meta.png",
             "compName": "Meta",
             "type": "Remote",
             "duration": "Full-Time",
@@ -59,7 +59,7 @@
 
             {
             "id": "4",
-            "img": "/src/assets/Logo/microsoft.png",
+            "img": "https://i.ibb.co/3kByDYb/microsoft.png",
             "compName": "Microsoft",
             "type": "Onsight",
             "duration": "Full-Time",
@@ -78,7 +78,7 @@
 
             {
             "id": "5",
-            "img": "/src/assets/Logo/apple-logo.png",
+            "img": "https://i.ibb.co/SQ1Knvg/apple-logo.png",
             "compName": "Apple",
             "type": "Onsight",
             "duration": "Full-Time",
@@ -97,7 +97,7 @@
 
             {
             "id": "6",
-            "img": "/src/assets/Logo/tesla.png",
+            "img": "https://i.ibb.co/5Bv4SzG/tesla.png",
             "compName": "Tesla",
             "type": "Onsight",
             "duration": "Full-Time",
@@ -116,7 +116,7 @@
 
             {
             "id": "7",
-            "img": "/src/assets/Logo/netflix.png",
+            "img": "https://i.ibb.co/nLkH5yY/netflix.png",
             "compName": "Netflix",
             "type": "Remote",
             "duration": "Full-Time",
@@ -135,7 +135,7 @@
 
             {
             "id": "8",
-            "img": "/src/assets/Logo/uber.png",
+            "img": "https://i.ibb.co/z78n4MT/uber.png",
             "compName": "Uber",
             "type": "Remote",
             "duration": "Full-Time",
@@ -154,7 +154,7 @@
 
             {
             "id": "9",
-            "img": "/src/assets/Logo/twitter.png",
+            "img": "https://i.ibb.co/SQ6fJNJ/twitter.png",
             "compName": "Twitter",
             "type": "Remote",
             "duration": "Full-Time",
