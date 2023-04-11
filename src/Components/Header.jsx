@@ -8,6 +8,12 @@ const Header = () => {
             <Link title="Navigate to Home" to="/" className="text-3xl text-slate-800 font-bold">CuratorVault</Link>
             {/* menus */}
             <ul className="inline-flex gap-10">
+            <li>
+                    <NavLink
+                    to='/'
+                    className={({isActive})=>{isActive? 'active' : 'default'}}
+                    >Home</NavLink>
+                </li>
                 <li>
                     <NavLink
                     to='/statistics'

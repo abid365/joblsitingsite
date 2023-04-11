@@ -1,0 +1,22 @@
+[
+    {
+        "catLogo": "https://i.ibb.co/HqQqNhK/social-media-1.png",
+        "catName": "Marketing & Sales",
+        "jobsAvailable" : "150+ Jobs Available"
+    },
+    {
+        "catLogo": "https://i.ibb.co/DtTpQwN/chip-1.png",
+        "catName": "Engineering Job",
+        "jobsAvailable" : "224+ Jobs Available"
+    },
+    {
+        "catLogo": "https://i.ibb.co/D5SX5FR/business-1.png",
+        "catName": "Creative Design",
+        "jobsAvailable" : "100+ Jobs Available"
+    },
+    {
+        "catLogo": "https://i.ibb.co/q7PNB47/accounts-1.png",
+        "catName": "Account & Finance",
+        "jobsAvailable" : "300+ Jobs Available"
+    }
+]

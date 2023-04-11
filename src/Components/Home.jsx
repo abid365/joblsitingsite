@@ -33,7 +33,7 @@ const Home = () => {
                 {/* right portion: image */}
 
                 <div className="">
-                    <img src="/src/assets/hero-user-img.gif" alt="" className="" />
+                    <img src="https://i.ibb.co/YjNc3zr/hero-user-img.gif" alt="" className="" />
                 </div>
             </div> 
             </section>
