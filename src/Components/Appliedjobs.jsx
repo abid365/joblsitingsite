@@ -14,7 +14,7 @@ const Appliedjobs = () => {
     }, [])
 
     return (
-        <div>
+        <div className='mt-40 lg:mt-auto md:mt-auto'>
             <div className="text-5xl text-center mt-12 font-bold">
                 <span className="text-center bg-gradient-to-r from-purple-400 leading-none to-indigo-800 bg-clip-text text-transparent">Applied Jobs: {data.length}
                 </span>

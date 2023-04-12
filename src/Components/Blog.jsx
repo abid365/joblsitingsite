@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div>
-            <div className="mt-12">
+            <div className="mt-40 lg:mt-12 md:mt-12">
                 <div className='border rounded-lg p-4 bg-indigo-200'>
                     <h1 className="my-3 font-bold text-slate-600">When should you use context api?</h1>
                     <p className="text-sm">React Context is a way for a child component to access a value in a parent component.

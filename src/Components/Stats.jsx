@@ -43,7 +43,7 @@ const data = [
 
 const Stats = () => {
   return (
-    <div className="mt-16">
+    <div className="mt-40 lg:mt-14 md:mt-14">
       <ResponsiveContainer width="100%" height={500}>
           <AreaChart
                 width={500}
