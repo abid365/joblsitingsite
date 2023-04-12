@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div className=''>
       <Header />
-      <div className="mx-8">
+      <div className="mx-8 mt-5">
         <Outlet />
       </div>
     </div>

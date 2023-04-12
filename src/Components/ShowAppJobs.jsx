@@ -27,7 +27,7 @@ const ShowAppJobs = ({appliedjobs}) => {
                             {/* company name */}
                             <p className="text-slate-700 text-sm">{compName}</p>
                             {/* job type: remote/onsight and duration */}
-                            <div className="OnsightOrRemote my-1">
+                            <div className="OnsightOrRemote my-1 flex flex-col lg:block md:block">
                                 <span className='job-type'>{type}</span>
                                 <span className='job-duration'>{duration}</span>
                             </div>
@@ -46,7 +46,7 @@ const ShowAppJobs = ({appliedjobs}) => {
 
                         </div>
                 </div>
-                <button className='mr-5 px-5 py-3 font-bold rounded-lg bg-gradient-to-l from-purple-400 to-indigo-300 text-white'>View Details</button>
+                <button className='lg:mr-5 lg:px-5 lg:py-3 md:mr-2 md:px-3 md:py-2 mr-2 font-bold rounded-lg bg-gradient-to-l from-purple-400 to-indigo-300 text-white'>View Details</button>
 
             </div>
 
