@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ShowAppJobs from './ShowAppJobs';
 
 const Appliedjobs = () => {
     const [data, setData] = useState([])
@@ -14,7 +15,19 @@ const Appliedjobs = () => {
 
     return (
         <div>
-            <h1 className="">Applied Jobs: {data.length}</h1>
+            <div className="text-5xl text-center mt-12 font-bold">
+                <span className="text-center bg-gradient-to-r from-purple-400 leading-none to-indigo-800 bg-clip-text text-transparent">Applied Jobs: {data.length}
+                </span>
+            </div>
+            {
+                data.map(appliedjobs => 
+                    // console.log(appliedjobs);
+                    <ShowAppJobs
+                    appliedjobs={appliedjobs}
+                    key={appliedjobs.id}
+                    ></ShowAppJobs>
+                )
+            }
         </div>
     );
 };
