@@ -28,7 +28,7 @@ const Job = ({job}) => {
                 </div>
             </div>
 
-            <button className='mt-6 rounded bg-gradient-to-l from-indigo-400 to-purple-300 py-3 px-5 text-sm font-bold text-white'>
+            <button className='mt-6 rounded bg-gradient-to-l hover:text-yellow-400 from-indigo-400 to-purple-300 py-3 px-5 text-sm font-bold text-white'>
                 <Link to={`/details/${id}`}>View Details</Link>
             </button>
         </div>
