@@ -54,25 +54,25 @@ const Home = () => {
                     
 
                     <div className="jobs-card">
-                        <img className="jobs-icon" src="/src/assets/Icons/accounts 1.png" alt=""/>
+                        <img className="jobs-icon" src="https://i.ibb.co/q7PNB47/accounts-1.png" alt=""/>
                         <h1 className="mt-8 font-bold">Account & Finance</h1>
                         <small className="small-text">300+ Jobs Available</small>
                     </div>
 
                     <div className="jobs-card">
-                        <img className="jobs-icon" src="/src/assets/Icons/business 1.png" alt=""/>
+                        <img className="jobs-icon" src="https://i.ibb.co/D5SX5FR/business-1.png" alt=""/>
                         <h1 className="mt-8 font-bold">Creative Design</h1>
                         <small className="small-text">100+ Jobs Available</small>
                     </div>
 
                     <div className="jobs-card">
-                        <img className="jobs-icon" src="/src/assets/Icons/social-media 1.png" alt=""/>
+                        <img className="jobs-icon" src="https://i.ibb.co/HqQqNhK/social-media-1.png" alt=""/>
                         <h1 className="mt-8 font-bold">Marketing & Sales</h1>
                         <small className="small-text">150+ Jobs Available</small>
                     </div>
 
                     <div className="jobs-card">
-                        <img className="jobs-icon" src="/src/assets/Icons/chip 1.png" alt=""/>
+                        <img className="jobs-icon" src="https://i.ibb.co/DtTpQwN/chip-1.png" alt=""/>
                         <h1 className="mt-8 font-bold">Engineering Job</h1>
                         <small className="small-text">224+ Jobs Available</small>
                     </div>

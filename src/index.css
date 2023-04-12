@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .active{
-    @apply text-[16px] font-medium tracking-wide text-slate-500 transition-colors duration-200 hover:text-blue-400
+    @apply text-[16px] font-medium tracking-wide text-blue-500 transition-colors duration-200 hover:text-pink-400
   }
   
   .default{
-    @apply text-[16px] font-medium tracking-wide text-slate-500 transition-colors duration-200 hover:text-blue-400
+    @apply text-[16px] font-medium tracking-wide text-blue-500 transition-colors duration-200 hover:text-pink-400
   }
 
   .jobs-card{
