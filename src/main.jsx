@@ -13,6 +13,7 @@ import Blog from './Components/Blog';
 import Jobdetails from './Components/Jobdetails';
 import Error from './Components/Error';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -52,7 +53,8 @@ const router = createBrowserRouter([
           return jobDetails;
         },
         errorElement: <Error />,
-      }
+      },
+      
     ],
   },
 ]);

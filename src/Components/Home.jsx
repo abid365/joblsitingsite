@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { Outlet, useLoaderData } from 'react-router-dom';
 import Job from './Job';
+
 
 
 const Home = () => {
@@ -50,6 +51,7 @@ const Home = () => {
                 </div>
                 {/* available jobs */}
                 <div className="grid md:grid-cols-4 lg:grid-cols-4 gap-3 mt-8">
+                    
 
                     <div className="jobs-card">
                         <img className="jobs-icon" src="/src/assets/Icons/accounts 1.png" alt=""/>

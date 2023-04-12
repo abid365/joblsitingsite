@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { MapPinIcon, CurrencyDollarIcon , CubeIcon, PhoneIcon, EnvelopeIcon} from '@heroicons/react/24/solid'
+import setJobToLocalStorage from '../utils/fakedb';
+import { data } from 'autoprefixer';
 
 const Jobdetails = () => {
     const jobDetails = useLoaderData();
@@ -83,7 +85,7 @@ const Jobdetails = () => {
                 </div>
 
                 <div className="mt-6">
-                        <button className="px-5 py-3  font-bold text-white rounded-lg bg-gradient-to-r from-purple-300 to-indigo-600">Apply Now</button>
+                        <button onClick={()=>setJobToLocalStorage(jobDetails)} className="px-5 py-3 hover:text-slate-600  font-bold text-white rounded-lg bg-gradient-to-r from-purple-300 to-indigo-600">Apply Now</button>
                     </div>
                 </div>
         </div>
