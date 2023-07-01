@@ -32,10 +32,6 @@ An open source project, that is hosting millions of jobs for independent and ind
 
 ## Used By
 
-This project is used by the following companies:
-
-- Programming Hero
-- Phitron
 
 
 
